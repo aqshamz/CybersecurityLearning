@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LoadController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LoadController::class, 'index']);
+Route::get('/register', [LoadController::class, 'index']);
+Route::post('/register', [AuthController::class, 'doRegisterUser']);
 Route::get('/login', [LoadController::class, 'loginpage']);
-Route::get('/home', [LoadController::class, 'homepage']);
+Route::post('/login', [AuthController::class, 'doLoginUser']);
+Route::get('/', [LoadController::class, 'homepage']);

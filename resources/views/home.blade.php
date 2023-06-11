@@ -3,9 +3,11 @@
 <title> Cybersecurity Learning </title>
 <div class="header">
     <div class="navbar">
-        <a href="/home" class="navbtn">HOME</a>
-        <a href="/" class="navbtn">SIGN UP</a>
+        <a href="/" class="navbtn">HOME</a>
+        @if (!\Illuminate\Support\Facades\Auth::check())
+        <a href="/register" class="navbtn">SIGN UP</a>
         <a href="/login" class="navbtn">LOGIN </a>
+        @endif
         <a href="https://www.getsafeonline.org/games/cybersense/" class="navbtn">GAME</a>
     </div>
 </div>

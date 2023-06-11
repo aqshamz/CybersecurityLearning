@@ -141,19 +141,20 @@
     <div class="container">
         <div class="wrapper">
             <div class="title"><span>Login Form</span></div>
-            <form action="#">
+            <form action="" method="post">
+                @csrf
                 <div class="row">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Email or Phone" required>
+                    <input type="text" name="email" id="email" placeholder="Email or Phone" required>
                 </div>
                 <div class="row">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
                 <div class="row button">
                     <input type="submit" value="Login">
                 </div>
-                <div class="signup-link"></div><a href="../Registration/Registration.html">Signup now</a>
+                <div class="signup-link"></div><a href="/register">Signup now</a>
         </div>
         </form>
     </div>
