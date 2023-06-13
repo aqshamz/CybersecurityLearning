@@ -17,7 +17,7 @@ class LogedOnly
     public function handle(Request $request, Closure $next): Response
     {
         if (!Auth::check())
-            return redirect('/');
+            return redirect()->route('login')->with('success', 'Registrasi berhasil.');
 
         return $next($request);
     }

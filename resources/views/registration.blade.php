@@ -118,7 +118,7 @@
 <body>
     <div class="wrapper">
         <h2>Registration</h2>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{ route('doRegisterUser') }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="input-box">
                 <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -140,7 +140,7 @@
                 <input type="Submit" value="Register Now">
             </div>
             <div class="text">
-                <h3>Already have an account? <a href="/login">Login now</a></h3>
+                <h3>Already have an account? <a href="{{ route('login') }}">Login now</a></h3>
             </div>
         </form>
     </div>

@@ -141,7 +141,7 @@
     <div class="container">
         <div class="wrapper">
             <div class="title"><span>Login Form</span></div>
-            <form action="" method="post">
+            <form action="{{ route('doLoginUser') }}" method="post">
                 @csrf
                 <div class="row">
                     <i class="fas fa-user"></i>
