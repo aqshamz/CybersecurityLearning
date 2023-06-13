@@ -17,4 +17,8 @@ class LoadController extends Controller
     public function homepage(){
         return view('home');
     }
+
+    public function aboutus(){
+        return view('aboutus');
+    }
 }
