@@ -16,8 +16,9 @@
     }
 
     body {
-        background: #4070f4;
-        overflow: hidden;
+    background-image: url('assets/bg4.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
     ::selection {

@@ -20,7 +20,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #4070f4;
+        background-image: url('assets/bg4.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
     }
 
     .wrapper {

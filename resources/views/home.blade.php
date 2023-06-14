@@ -3,11 +3,6 @@
 
 {{-- test --}}
 <div class="container">
-    <div class="">
-        <video src="assets/training_center.mp4" controls>
-            Your browser does not support the video tag.
-          </video>
-    </div>
     <div>
         <h1 _ngcontent-sc58="" id="wb-cont">Cyber security for kids: An introduction</h1>
         <div class="row bs-1col-stacked">

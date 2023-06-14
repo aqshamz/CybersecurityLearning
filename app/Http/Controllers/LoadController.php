@@ -21,4 +21,7 @@ class LoadController extends Controller
     public function aboutus(){
         return view('aboutus');
     }
+    public function video(){
+        return view('video');
+    }
 }
